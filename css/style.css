@@ -10,21 +10,133 @@
 
 /* #region GENERAL */
 
+body {
+  font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+
 /* #endregion GENERAL */
 
 /* #region  COMMON */
+
+.layout {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
 
 /* #endregion COMMON */
 
 /* #region  HEADER */
 
+header {
+  height: 70px;
+  background-color: #ff6900;
+}
+
 /* #endregion HEADER */
 
 /* #region  MAIN */
 
+/* main {
+  background-color: aqua;
+} */
+
+main .layout.container {
+  padding: 50px 0;
+}
+main .product {
+  width: calc((100% - 100px) / 3);
+}
+
+main .product .product-top {
+  position: relative;
+}
+
+main .product .product-top img {
+  width: 100%;
+}
+
+main .product .product-top .foto2 {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+main .product .product-top:hover .foto2 {
+  z-index: 1;
+}
+
+main .product .product-top .tag {
+  color: white;
+  font-size: 11px;
+  position: absolute;
+  bottom: 40px;
+  z-index: 2;
+}
+
+main .product .product-top .tag .discount {
+  background-color: #ff0000;
+  display: inline-block;
+  padding: 4px;
+}
+
+main .product .product-top .tag .ecologic {
+  background-color: #008000;
+  display: inline-block;
+  padding: 4px;
+}
+
+main .product .product-top .cuore {
+  font-size: 26px;
+  background-color: white;
+  width: 40px;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  z-index: 2;
+}
+
+main .product .product-top .cuore:hover {
+  color: red;
+}
+
+main .product .product-bottom div {
+  margin-bottom: 2px;
+}
+
+main .product .product-bottom div:nth-child(1) {
+  font-size: 12px;
+}
+
+main .product .product-bottom div:nth-child(2) {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main .product .product-bottom div:nth-child(3) {
+  font-size: 11px;
+  color: red
+}
+
+main .product .product-bottom div:nth-child(3) del {
+  color: black;
+}
+
+
 /* #endregion MAIN */
 
 /* #region FOOTER */
+
+footer {
+  height: 100px;
+  background-color: #1a1a1a;
+}
 
 /* #endregion FOOTER */
 
