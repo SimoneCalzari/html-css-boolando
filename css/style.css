@@ -40,7 +40,11 @@ a {
 /* #region  HEADER */
 
 header {
-  /* height: 70px; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
   background-color: #ff6900;
   color: white;
 }
@@ -51,7 +55,7 @@ header .container.layout {
 }
 
 header .container.layout div {
-  padding: 10px;
+  padding: 5px;
 }
 
 header .container.layout div:nth-child(1) {
@@ -89,7 +93,7 @@ header .container.layout div:nth-child(3) ul {
 /* #region  MAIN */
 
 main .layout.container {
-  padding: 50px 0;
+  padding: 110px 0 50px;
   flex-wrap: wrap;
   gap: 50px;
 }
@@ -178,9 +182,56 @@ main .product .product-bottom div:nth-child(3) del {
 /* #region FOOTER */
 
 footer {
-  height: 100px;
   background-color: #1a1a1a;
+  color: white;
+  padding: 20px 0;
 }
+
+footer .container.layout {
+  justify-content: space-between;
+}
+
+/* PARTE FOOTER A SINISTRA */
+
+footer .container.layout div:nth-child(1) div:nth-child(2) ul {
+  display: flex;
+  gap: 10px;
+}
+
+footer .container.layout div:nth-child(1) div:nth-child(2) ul li {
+  font-size: 14px;
+}
+
+footer .container.layout div:nth-child(1) div:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer .container.layout div:nth-child(1) div {
+  margin-bottom: 10px;
+}
+
+/* PARTE FOOTER DESTRA */
+
+footer .container.layout div:nth-child(2) div:nth-child(2) ul {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+footer .container.layout div:nth-child(2) div:nth-child(2) ul li {
+  font-size: 20px;
+}
+footer .container.layout div:nth-child(2) div:nth-child(1) {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer .container.layout div:nth-child(2) div {
+  margin-bottom: 10px;
+}
+
+
 
 /* #endregion FOOTER */
 
