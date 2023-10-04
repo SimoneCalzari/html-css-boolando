@@ -20,13 +20,19 @@ body {
 .layout {
   max-width: 1000px;
   margin: 0 auto;
-  background-color: white;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 /* #endregion COMMON */
@@ -34,20 +40,58 @@ body {
 /* #region  HEADER */
 
 header {
-  height: 70px;
+  /* height: 70px; */
   background-color: #ff6900;
+  color: white;
+}
+
+header .container.layout {
+  align-items: center;
+  padding: 10px 0;
+}
+
+header .container.layout div {
+  padding: 10px;
+}
+
+header .container.layout div:nth-child(1) {
+  width: 20%;
+}
+
+header .container.layout div:nth-child(1) ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+header .container.layout div:nth-child(2) {
+  flex-grow: 1;
+  text-align: center;
+}
+
+header .container.layout div:nth-child(2) img {
+  width: 20%;
+}
+
+header .container.layout div:nth-child(3) {
+  width: 20%;
+}
+
+header .container.layout div:nth-child(3) ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
 }
 
 /* #endregion HEADER */
 
 /* #region  MAIN */
 
-/* main {
-  background-color: aqua;
-} */
-
 main .layout.container {
   padding: 50px 0;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 main .product {
   width: calc((100% - 100px) / 3);
